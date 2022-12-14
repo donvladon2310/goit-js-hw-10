@@ -35,7 +35,6 @@ function onSearch(e) {
   }
 };
 
-
 function renderCountryInfo(countryGetInfo) {
 
   for (const key in countryGetInfo) {
@@ -48,9 +47,7 @@ function renderCountryInfo(countryGetInfo) {
       const { name, capital, population, flags, languages
       } = element;
 
-
       console.log(countryGetInfo.length);
-
 
       if (countryGetInfo.length > 1 && countryGetInfo.length < 10) {
 
@@ -75,7 +72,6 @@ function renderCountryInfo(countryGetInfo) {
         refs.countryInfo.innerHTML = '';
 
       }
-
 
       function AddCountryFullInfo(countryGetInfo) {
 
@@ -111,8 +107,6 @@ function renderCountryInfo(countryGetInfo) {
 };
 
 function AddCountryList(countryGetInfo) {
-
-
 
   const markup = countryGetInfo.map((item) => {
     console.log(item);
